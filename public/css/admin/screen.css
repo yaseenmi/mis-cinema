@@ -1,0 +1,37 @@
+.screen-container {
+    width: 1500px;
+    padding: 2rem;
+    gap: 4rem;
+}
+.monitor {
+    width: 700px;
+    height: 60px;
+    background: #dcdcdc;
+}
+.seat-true {
+    width: 52px !important;
+    height: 52px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(190, 33, 25, 0.945);
+    border-radius: 5px;
+}
+.seat-false {
+    width: 52px !important;
+    height: 52px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dcdcdc;
+    border-radius: 5px;
+}
+.screen-select-item {
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    padding: 0.6rem 0.8rem;
+    cursor: pointer;
+}
+.seat-reserved {
+    background: gold !important;
+}

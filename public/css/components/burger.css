@@ -1,0 +1,26 @@
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.4s opacity;
+}
+.burger > div {
+    width: 100%;
+    border-radius: 4px;
+    background: var(--WhiColor);
+    opacity: 1;
+    transition: 0.4s transform;
+}
+.burger:hover {
+    opacity: 0.9;
+}
+.burger:hover > div:nth-child(1) {
+    transform: translate(5px, 0);
+}
+.burger:hover > div:nth-child(3) {
+    transform: translate(3px, 0);
+}
+.burger:hover > div:nth-child(2) {
+    transform: translate(-3px, 0);
+}

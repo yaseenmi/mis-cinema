@@ -1,0 +1,52 @@
+/********************/
+/* Dashboard Layout */
+/********************/
+.sidemenu-container {
+    background: var(--prim-color);
+    background: linear-gradient(
+        0deg,
+        rgba(12, 2, 2, 0.966) 0%,
+        rgba(0, 0, 0, 0.966) 100%
+    );
+    width: 100%;
+    min-height: 100vh;
+}
+
+/****************/
+/* Left Section */
+/****************/
+.left-bar {
+    display: flex;
+    flex-direction: column;
+}
+/* Links */
+.left-bar a {
+    color: #dcdcdc;
+    font-size: 1.1rem;
+}
+
+/*****************/
+/* Right Section */
+/*****************/
+.right-main-content {
+    position: relative;
+    padding: 0px 2.5rem;
+}
+
+.profile-email {
+    border: 1px solid gray;
+    padding: 4px 10px;
+    color: lightgray;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 50em) {
+    .left-bar {
+        display: none;
+    }
+    .right-main-content {
+        width: 100% !important;
+        padding: 0;
+    }
+}

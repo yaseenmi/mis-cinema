@@ -1,0 +1,101 @@
+/* HEADER (WELCOME --> GET STARTED) */
+.header-container {
+    background: var(--prim-color);
+    background: linear-gradient(
+        to bottom,
+        rgba(42, 5, 4, 0.9) 0%,
+        rgba(0, 0, 0, 0.966) 100%
+    );
+    padding: 9rem 0px;
+}
+.header-container > div {
+    width: 80%;
+    margin-inline: auto;
+}
+.header-container .header-title {
+    font-size: 4.5rem !important;
+    font-weight: 1000;
+    color: white;
+    line-height: 5.5rem;
+    text-transform: uppercase;
+}
+.header-container > div > div > p {
+    width: 60%;
+    color: white;
+}
+.break-city {
+    word-break: break-all;
+    width: 100%;
+}
+/* MOVIES DISPLAY CONTAINER */
+.movies-container {
+    padding-top: 5.5rem;
+    background: rgba(0, 0, 0, 0.966);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+.movies-container > h2 {
+    width: 80%;
+    margin-inline: auto;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.movies-container > h2 > span {
+    color: rgb(150, 17, 9);
+}
+
+/* MOVIES CARDS CONTAINER */
+.movies-cards-container {
+    width: 80%;
+    margin-inline: auto;
+}
+/* MOVIE CARD */
+.movies-cards-container .movie-card {
+    min-width: 25%;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    transition: 0.3s;
+}
+.movies-cards-container .movie-card img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+.movies-cards-container .movie-card:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+/* PRICES CONTAINER */
+.movies-container .prices-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.movies-container .prices-container h3 {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 50em) {
+    .movies-cards-container {
+        flex-wrap: wrap;
+    }
+    .nav-links {
+        display: none;
+    }
+    .header-container .header-title {
+        font-size: 3rem !important;
+        line-height: 3.6rem;
+    }
+    .header-container > div {
+        width: 90%;
+    }
+    .header-container > div > div > p {
+        width: 100%;
+    }
+    .movies-container .prices-container h3 {
+        font-size: 1.2rem;
+    }
+}

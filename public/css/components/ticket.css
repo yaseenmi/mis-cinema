@@ -1,0 +1,15 @@
+.ticket-card {
+    width: 32.5%;
+    background: #111111;
+    padding: 30px;
+    border-radius: 4px;
+}
+.ticket-card-title {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 50em) {
+    .ticket-card {
+        width: 100%;
+    }
+}
