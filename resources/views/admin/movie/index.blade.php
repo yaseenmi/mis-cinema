@@ -17,7 +17,7 @@
     menuColor="#DCDCDC"
     mainColor="#F2F2F2">
         <x-slot name="menuLinks">
-                <x-sidebar.link href="/admin/dashboard/home" iconColor="black" icon="stat">Statistics</x-sidebar-link>
+                <x-sidebar.link href="/admin/dashboard" iconColor="black" icon="stat">Statistics</x-sidebar-link>
                 <x-sidebar.link href="/admin/dashboard/movie" iconColor="black" icon="movie">Movies</x-sidebar-link>
                 <x-sidebar.link href="/admin/dashboard/screen" iconColor="black" icon="screen">Screens</x-sidebar-link>
                 <x-sidebar.link href="/admin/dashboard/user" iconColor="black" icon="user">Users</x-sidebar-link>
@@ -33,10 +33,10 @@
                     </div>
                 </div>
                 <div class="flex items-center gap-3">
-                    <a href="#" class="movie-card"><img src="{{ asset('images/posters/poster1.jpg') }}" alt=""></a>
-                    <a href="#" class="movie-card"><img src="{{ asset('images/posters/poster2.jpg') }}" alt=""></a>
-                    <a href="#" class="movie-card"><img src="{{ asset('images/posters/poster3.jpg') }}" alt=""></a>
-                    <a href="#" class="movie-card"><img src="{{ asset('images/posters/poster4.jpg') }}" alt=""></a>
+                    <a href="/admin/dashboard/movie/detail" class="movie-card"><img src="{{ asset('images/posters/poster1.jpg') }}" alt=""></a>
+                    <a href="/admin/dashboard/movie/detail" class="movie-card"><img src="{{ asset('images/posters/poster2.jpg') }}" alt=""></a>
+                    <a href="/admin/dashboard/movie/detail" class="movie-card"><img src="{{ asset('images/posters/poster3.jpg') }}" alt=""></a>
+                    <a href="/admin/dashboard/movie/detail" class="movie-card"><img src="{{ asset('images/posters/poster4.jpg') }}" alt=""></a>
                 </div>
             </div>
 

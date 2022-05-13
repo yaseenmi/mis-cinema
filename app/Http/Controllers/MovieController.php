@@ -23,6 +23,10 @@ class MovieController extends Controller
     {
         return view('admin.movie.create');
     }
+    public function detail()
+    {
+        return view('admin.movie.detail');
+    }
     public function show()
     {
         return view('movie.show');

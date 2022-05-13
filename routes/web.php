@@ -45,6 +45,7 @@ Route::middleware('auth')->group(function () {
 Route::middleware('admin')->group(function () {
     Route::get('/admin/dashboard/movie', [AdminController::class, 'movie']);
     Route::get('/admin/dashboard/movie/create', [MovieController::class, 'create']);
+    Route::get('/admin/dashboard/movie/detail', [MovieController::class, 'detail']);
     Route::post('/admin/dashboard/movie', [MovieController::class, 'store'])->name("createMovie");
     Route::put('/admin/dashboard/movie/{id}', [MovieController::class, 'update']);
     Route::delete('/admin/dashboard/movie/{id}', [MovieController::class, 'destroy']);
